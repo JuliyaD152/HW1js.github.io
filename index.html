@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <title>Домашнее задание 1 JS</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            width: 250px;
+        }
+        .input{
+            display:flex;
+            flex-direction: column;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+         button:hover{
+            background-color: blue;
+        }
+        .but:hover{
+            background-color: blue;
+        }
+    </style>
+     <script>
+        function oper(element) {
+           document.getElementById("window").value+=element;
+      }
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="window" value="">
+        <div class="input">
+            <input type="button" class="but" value="Я добавлю +" onclick="oper('+')">
+            <input type="button" class="but" value="Я добавлю -" onclick="oper('-')">
+            <input type="button" class="but" value="Я добавлю /" onclick="oper('/')">
+            <input type="button" class="but" value="Я добавлю *" onclick="oper('*')">
+   </div>
+         
+            <button class="number" value="1" onclick="oper('1')">1</button>
+            <button class="number" value="2" onclick="oper('2')">2</button>
+            <button class="number" value="3" onclick="oper('3')">3</button>
+            <button class="number" value="4" onclick="oper('4')">4</button>
+            <button class="number" value="5" onclick="oper('5')">5</button>
+            <button class="number" value="6" onclick="oper('6')">6</button>
+            <button class="number" value="7" onclick="oper('7')">7</button>
+            <button class="number" value="8" onclick="oper('8')">8</button>
+            <button class="number" value="9" onclick="oper('9')">9</button>
+               
+</body>
+</html>
+
+
+
